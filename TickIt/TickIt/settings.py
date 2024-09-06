@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main.app.mainConfig'
+    'main.apps.MainConfig',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +78,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        'TIME_ZONE' : 'Europe/London'
     }
 }
 
